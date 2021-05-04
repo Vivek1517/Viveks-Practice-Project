@@ -7,8 +7,9 @@ Feature: Search field
     And user clicks on search
     Then user should see an error message "<error>"
     Examples:
-      | product_Name | error                                       |
-      | jeans        | No results were found for your search jeans |
+      | product_Name | error                                        |
+      | jeans        | No results were found for your search jeans  |
+      | skirts       | No results were found for your search skirts |
 
     Scenario: Verify user is able to search available product using search field box
       When user searches for product "skirt" in the search field
